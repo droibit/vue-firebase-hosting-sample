@@ -1,5 +1,5 @@
 {
   "projects": {
-    "sample": "vue-firebase-hosting-sample"
+    "sample": "$FIREBASE_PROJECT"
   }
 }
