@@ -10,6 +10,9 @@ install:
 script:
   - yarn build
 
+after_success:
+  - firebase deploy  
+
 branches:
   only:
     - master

@@ -1,5 +1,5 @@
 {
   "projects": {
-    "sample": "$FIREBASE_PROJECT"
+    "sample": $FIREBASE_PROJECT
   }
 }
