@@ -14,13 +14,13 @@ export default {
   components: {
     HelloWorld
   },
-  created() {
-    client
-      .get("/api/ping")
-      .then(
-        res => console.log(`response: ${res.data}`),
-        err => console.error(err)
-      );
+  async created() {
+    try {
+      const response = await client.get("/api/ping");
+      console.log(`response: ${await response.text()}`);
+    } catch (err) {
+      console.error(err);
+    }
   }
 };
 </script>
