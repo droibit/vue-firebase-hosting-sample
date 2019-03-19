@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "lts/*"
+  - "8.9.1"
 
 install:
   - yarn global add firebase-tools
