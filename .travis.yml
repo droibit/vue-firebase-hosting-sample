@@ -9,9 +9,10 @@ install:
 
 script:
   - yarn build
+  - (cd functions && yarn)
 
 after_success:
-  - firebase deploy  
+  - firebase deploy
 
 branches:
   only:
